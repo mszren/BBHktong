@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "21ab013b-65f8-7a4f-b91e-b0fe1fa61e6f++9405",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "21ab013b-65f8-7a4f-b91e-b0fe1fa61e6f++9405" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "21ab013b-65f8-7a4f-b91e-b0fe1fa61e6f++9405" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "24944730-5394-49AF-9634-3301E9796E50",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "21ab013b-65f8-7a4f-b91e-b0fe1fa61e6f++9405" : "IOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HKT",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Branch\/hkt20151201\/HKT.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.0.19\/svn\/hkt",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21ab013b-65f8-7a4f-b91e-b0fe1fa61e6f++9405"
+    }
+  ]
+}

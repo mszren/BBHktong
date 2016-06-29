@@ -1,0 +1,58 @@
+//
+//  app.pch
+//  HKT
+//
+//  Created by Ting on 15/9/15.
+//  Copyright (c) 2015年 百瑞. All rights reserved.
+//
+
+#ifndef Aggregate_Customer_app_pch
+#define Aggregate_Customer_app_pch
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "GlobalFunction.h"
+    #import "MobClick.h"
+    #import "CoreDataUtil.h"
+#import "UIColor+Hex.h"
+#endif
+
+//#define kBasePort @"http://api.berui.com/"
+#define kBasePort @"http://demo.berui.com/"
+
+
+#define AppStoreID @"1044183743"
+#define ScreenSize [UIScreen mainScreen].bounds.size
+//
+// 屏幕尺寸
+#define kDeviceWidth                ([UIScreen mainScreen].bounds.size.width)
+#define KDeviceHeight               ([UIScreen mainScreen].bounds.size.height)
+#define kNavigationBarHeight        (ios7AndLater ? 64 : 44)
+
+//设备判断
+#define iPhone6P ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//按钮颜色
+#define blueButtonNormalColor       0x59b8ef
+#define blueButtonHeighColor        0x48b7e0
+#define blueButtonDisableColor      0xb4b4b4
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#if DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog
+#endif
+
+#endif

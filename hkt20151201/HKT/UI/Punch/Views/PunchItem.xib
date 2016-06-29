@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yrr-Pi-NbW" customClass="PunchItem">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                    <rect key="frame" x="0.0" y="88" width="164" height="212"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaQ-hB-dWg">
+                            <rect key="frame" x="0.0" y="172" width="164" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="昨晚没睡好" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNY-qQ-X4u">
+                                    <rect key="frame" x="0.0" y="0.0" width="164" height="40"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" red="0.21568627450980393" green="0.59215686274509804" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lW8-55-MgK">
+                            <rect key="frame" x="0.0" y="0.0" width="164" height="172"/>
+                            <animations/>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="心情极佳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XE-TT-L6n">
+                    <rect key="frame" x="54" y="35" width="56" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.21568627450980393" green="0.59215686274509804" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYc-Zr-gXa">
+                    <rect key="frame" x="40" y="41" width="6" height="6"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.21568627450980393" green="0.59215686274509804" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="I32-pT-meO"/>
+                        <constraint firstAttribute="width" constant="6" id="hDu-16-4sI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6XE-TT-L6n" firstAttribute="centerX" secondItem="yrr-Pi-NbW" secondAttribute="centerX" id="HbU-Bv-EPI"/>
+                <constraint firstItem="6XE-TT-L6n" firstAttribute="top" secondItem="yrr-Pi-NbW" secondAttribute="top" constant="35" id="LYM-yX-cjZ"/>
+                <constraint firstItem="iYc-Zr-gXa" firstAttribute="top" secondItem="yrr-Pi-NbW" secondAttribute="top" constant="41" id="Nre-Uk-Q5y"/>
+                <constraint firstItem="6XE-TT-L6n" firstAttribute="leading" secondItem="iYc-Zr-gXa" secondAttribute="trailing" constant="8" id="dP8-rM-3m6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="blueRoundView" destination="iYc-Zr-gXa" id="Orh-nI-Ksj"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="0ZP-Fe-Klk"/>
+                <outlet property="detailImageView" destination="lW8-55-MgK" id="kYM-Tr-zV3"/>
+                <outlet property="detailLabel" destination="TNY-qQ-X4u" id="nV8-5h-GNY"/>
+                <outlet property="titleLabel" destination="6XE-TT-L6n" id="flH-Hz-RmY"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="447"/>
+        </view>
+    </objects>
+</document>

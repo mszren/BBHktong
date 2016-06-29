@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyWalletRewardDetailTableViewCell" rowHeight="75" id="KGk-i7-Jjw" customClass="MyWalletRewardDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJc-Zw-qYK">
+                        <rect key="frame" x="25" y="5" width="285" height="65"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y7e-a5-LdA">
+                                <rect key="frame" x="0.0" y="0.0" width="285" height="65"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签到奖励" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWt-qG-mXL">
+                                <rect key="frame" x="13" y="11" width="60" height="18"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-03-13 13:32:13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Poi-nO-LNh">
+                                <rect key="frame" x="14" y="39" width="128" height="16"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1元" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znS-Mj-hmO">
+                                <rect key="frame" x="243" y="12" width="32" height="18"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已到账" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfB-4l-jCl">
+                                <rect key="frame" x="236" y="36" width="39" height="16"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="y7e-a5-LdA" secondAttribute="trailing" id="3Vm-1v-rXG"/>
+                            <constraint firstItem="rWt-qG-mXL" firstAttribute="top" secondItem="GJc-Zw-qYK" secondAttribute="top" constant="11" id="8vi-DE-nse"/>
+                            <constraint firstItem="Poi-nO-LNh" firstAttribute="leading" secondItem="GJc-Zw-qYK" secondAttribute="leading" constant="14" id="K0n-m2-dQh"/>
+                            <constraint firstAttribute="trailing" secondItem="ZfB-4l-jCl" secondAttribute="trailing" constant="10" id="MZ5-H4-yTO"/>
+                            <constraint firstItem="y7e-a5-LdA" firstAttribute="leading" secondItem="GJc-Zw-qYK" secondAttribute="leading" id="TTh-w1-unr"/>
+                            <constraint firstItem="rWt-qG-mXL" firstAttribute="leading" secondItem="GJc-Zw-qYK" secondAttribute="leading" constant="13" id="TZl-S1-SPf"/>
+                            <constraint firstItem="y7e-a5-LdA" firstAttribute="top" secondItem="GJc-Zw-qYK" secondAttribute="top" id="Wl1-Qc-dH7"/>
+                            <constraint firstAttribute="trailing" secondItem="znS-Mj-hmO" secondAttribute="trailing" constant="10" id="fLX-4q-aub"/>
+                            <constraint firstItem="Poi-nO-LNh" firstAttribute="top" secondItem="rWt-qG-mXL" secondAttribute="bottom" constant="10" id="goV-IH-1BJ"/>
+                            <constraint firstItem="znS-Mj-hmO" firstAttribute="top" secondItem="GJc-Zw-qYK" secondAttribute="top" constant="12" id="ltx-hs-lvO"/>
+                            <constraint firstAttribute="bottom" secondItem="y7e-a5-LdA" secondAttribute="bottom" id="qaX-UI-BbI"/>
+                            <constraint firstItem="ZfB-4l-jCl" firstAttribute="top" secondItem="znS-Mj-hmO" secondAttribute="bottom" constant="6" id="yX2-Bn-jv5"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GFw-ep-h1x">
+                        <rect key="frame" x="13" y="15" width="1" height="60"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QTx-He-KRE">
+                        <rect key="frame" x="13" y="0.0" width="1" height="15"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Av3-ll-VU3">
+                        <rect key="frame" x="9" y="12" width="8" height="8"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GJc-Zw-qYK" secondAttribute="trailing" constant="10" id="B3I-ha-0MN"/>
+                    <constraint firstAttribute="bottom" secondItem="GJc-Zw-qYK" secondAttribute="bottom" constant="4" id="Ivp-qc-XRg"/>
+                    <constraint firstItem="GJc-Zw-qYK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="bWb-Mq-LTQ"/>
+                    <constraint firstItem="GJc-Zw-qYK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="lXx-Yv-DwN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgForBg" destination="y7e-a5-LdA" id="ZpU-7J-RON"/>
+                <outlet property="lblMoney" destination="znS-Mj-hmO" id="zFa-rF-7Er"/>
+                <outlet property="lblText" destination="ZfB-4l-jCl" id="yJ8-21-npp"/>
+                <outlet property="lblTime" destination="Poi-nO-LNh" id="paI-Pp-tDi"/>
+                <outlet property="lblTitle" destination="rWt-qG-mXL" id="cBp-np-m1E"/>
+                <outlet property="lineView" destination="GFw-ep-h1x" id="EuB-ax-ErJ"/>
+                <outlet property="roundView" destination="Av3-ll-VU3" id="pWm-mm-6j4"/>
+                <outlet property="topLineView" destination="QTx-He-KRE" id="KoL-rm-XXL"/>
+            </connections>
+            <point key="canvasLocation" x="362" y="204.5"/>
+        </tableViewCell>
+    </objects>
+</document>

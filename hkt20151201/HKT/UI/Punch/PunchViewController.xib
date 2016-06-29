@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PunchViewController">
+            <connections>
+                <outlet property="btnSubmit" destination="l4b-XD-xIv" id="yAp-o4-13J"/>
+                <outlet property="icarousel" destination="hws-gU-9l8" id="clF-vZ-5rw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4b-XD-xIv">
+                    <rect key="frame" x="90" y="345" width="140" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="d1y-QL-4wo"/>
+                        <constraint firstAttribute="height" constant="48" id="rzc-dz-lsu"/>
+                    </constraints>
+                    <state key="normal" title="马上签到">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" title="明日签到"/>
+                    <connections>
+                        <action selector="actionWithSubmit" destination="-1" eventType="touchUpInside" id="9gb-ez-UY2"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hws-gU-9l8" customClass="iCarousel">
+                    <rect key="frame" x="0.0" y="25" width="320" height="250"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="ZOr-dU-Htl"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fQt-ZQ-DAT"/>
+                        <outlet property="delegate" destination="-1" id="qiW-z2-0GU"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="l4b-XD-xIv" firstAttribute="top" secondItem="hws-gU-9l8" secondAttribute="bottom" constant="70" id="8ze-av-Bx9"/>
+                <constraint firstAttribute="trailing" secondItem="hws-gU-9l8" secondAttribute="trailing" id="C2s-56-wlJ"/>
+                <constraint firstItem="hws-gU-9l8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="IFu-Wd-xTg"/>
+                <constraint firstItem="hws-gU-9l8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UrX-1m-AgF"/>
+                <constraint firstItem="l4b-XD-xIv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gk6-uj-we5"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-27" y="325"/>
+        </view>
+    </objects>
+</document>

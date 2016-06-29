@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyWalletHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEs-fs-riU">
+                    <rect key="frame" x="160" y="0.0" width="160" height="100"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="NQX-lw-LVa"/>
+                    </constraints>
+                    <connections>
+                        <action selector="actionWithWithdrawClick" destination="iN0-l3-epB" eventType="touchUpInside" id="uy8-jc-GTz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dp-bb-0hd">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="100"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="Apg-nl-Ulm"/>
+                    </constraints>
+                    <connections>
+                        <action selector="actionWithWithdrawHistoryClick" destination="iN0-l3-epB" eventType="touchUpInside" id="AdF-Nd-W2E"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cOI-P3-gI4">
+                    <rect key="frame" x="13" y="10" width="24" height="26"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="NuD-nh-kPZ"/>
+                        <constraint firstAttribute="height" constant="26" id="emr-th-FWC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBQ-zy-aX1">
+                    <rect key="frame" x="203" y="42" width="79" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="0.95686274509803926" green="0.46274509803921571" blue="0.47843137254901963" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的钱包" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yat-2D-cF8">
+                    <rect key="frame" x="39" y="16" width="48" height="15"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwv-dR-YK1">
+                    <rect key="frame" x="45" y="42" width="68" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="0.2627450980392157" green="0.62352941176470589" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y1-LD-oP6">
+                    <rect key="frame" x="282" y="26" width="33" height="16"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.27843137254901962" green="0.63529411764705879" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="0cn-HQ-0fj"/>
+                        <constraint firstAttribute="height" constant="16" id="f7E-sr-rgL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已提现 &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQA-u1-lcM">
+                    <rect key="frame" x="58" y="78" width="44" height="14"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现有资产(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avM-5e-X2W">
+                    <rect key="frame" x="209" y="78" width="63" height="14"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yu-Ha-6Ye" customClass="TingLineViewV">
+                    <rect key="frame" x="160" y="50" width="1" height="35"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="FSe-pC-Zxn"/>
+                        <constraint firstAttribute="width" constant="1" id="cuN-Ii-GIv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7y1-LD-oP6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="138.5" id="5Kq-t8-4qR"/>
+                <constraint firstAttribute="trailing" secondItem="ZEs-fs-riU" secondAttribute="trailing" id="5Q5-Jj-heG"/>
+                <constraint firstItem="5Dp-bb-0hd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9SZ-U6-Grx"/>
+                <constraint firstItem="cOI-P3-gI4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="9mJ-wl-UyQ"/>
+                <constraint firstItem="ZEs-fs-riU" firstAttribute="width" secondItem="5Dp-bb-0hd" secondAttribute="width" id="A4r-S3-cp9"/>
+                <constraint firstItem="LQA-u1-lcM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-80.5" id="A4x-Cm-gTw"/>
+                <constraint firstItem="Yat-2D-cF8" firstAttribute="leading" secondItem="cOI-P3-gI4" secondAttribute="trailing" constant="2" id="Fuh-ws-jf4"/>
+                <constraint firstItem="avM-5e-X2W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="80.5" id="MQe-Z3-lbH"/>
+                <constraint firstItem="Hwv-dR-YK1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-81.5" id="Mez-rk-MH0"/>
+                <constraint firstItem="5Dp-bb-0hd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Nzx-FL-jPX"/>
+                <constraint firstItem="avM-5e-X2W" firstAttribute="top" secondItem="PBQ-zy-aX1" secondAttribute="bottom" constant="6" id="QQZ-Mh-YK8"/>
+                <constraint firstAttribute="bottom" secondItem="LQA-u1-lcM" secondAttribute="bottom" constant="8" id="W1d-EJ-axx"/>
+                <constraint firstItem="PBQ-zy-aX1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="82" id="Xbk-bm-cjj"/>
+                <constraint firstItem="0yu-Ha-6Ye" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="17.5" id="dc5-uq-Eip"/>
+                <constraint firstAttribute="bottom" secondItem="Hwv-dR-YK1" secondAttribute="bottom" constant="28" id="dcF-wa-OYX"/>
+                <constraint firstItem="cOI-P3-gI4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="dtE-dL-VMz"/>
+                <constraint firstItem="ZEs-fs-riU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dwn-wh-Xdt"/>
+                <constraint firstAttribute="bottom" secondItem="avM-5e-X2W" secondAttribute="bottom" constant="8" id="eCR-MK-Yhz"/>
+                <constraint firstItem="0yu-Ha-6Ye" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="krX-4A-wB1"/>
+                <constraint firstItem="ZEs-fs-riU" firstAttribute="leading" secondItem="5Dp-bb-0hd" secondAttribute="trailing" id="tBV-BF-5Ce"/>
+                <constraint firstItem="Yat-2D-cF8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="wur-OU-QiH"/>
+                <constraint firstItem="7y1-LD-oP6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="xMq-OL-RAJ"/>
+                <constraint firstAttribute="bottom" secondItem="5Dp-bb-0hd" secondAttribute="bottom" id="y3Y-4S-bFO"/>
+                <constraint firstAttribute="bottom" secondItem="ZEs-fs-riU" secondAttribute="bottom" id="zgQ-4f-RHH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblAllMoney" destination="PBQ-zy-aX1" id="Dt6-gP-Le1"/>
+                <outlet property="lblWithdraw" destination="7y1-LD-oP6" id="3me-ym-yN7"/>
+                <outlet property="lblWithdrawMoney" destination="Hwv-dR-YK1" id="Z7f-OZ-185"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="180"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wallet_icon" width="24" height="26"/>
+    </resources>
+</document>

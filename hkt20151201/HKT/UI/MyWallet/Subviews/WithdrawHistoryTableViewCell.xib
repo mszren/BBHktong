@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WithdrawHistoryTableViewCell" rowHeight="56" id="KGk-i7-Jjw" customClass="WithdrawHistoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-09-16 12:34:05" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJq-9n-qGA">
+                        <rect key="frame" x="15" y="33" width="122" height="15"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥99999元" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuq-Ud-2TX">
+                        <rect key="frame" x="218" y="17" width="87" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现申请中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKd-fm-BRP">
+                        <rect key="frame" x="15" y="10" width="75" height="18"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet_failure" translatesAutoresizingMaskIntoConstraints="NO" id="X7E-pc-5pB">
+                        <rect key="frame" x="94" y="8" width="14" height="14"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="DiF-QW-Jxo"/>
+                            <constraint firstAttribute="width" constant="14" id="a5h-bo-9fW"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="cKd-fm-BRP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GjY-IC-XMd"/>
+                    <constraint firstItem="fuq-Ud-2TX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="ME2-yG-ytS"/>
+                    <constraint firstAttribute="trailing" secondItem="fuq-Ud-2TX" secondAttribute="trailing" constant="15" id="MIr-SC-974"/>
+                    <constraint firstItem="cKd-fm-BRP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="P4m-gD-q07"/>
+                    <constraint firstItem="X7E-pc-5pB" firstAttribute="leading" secondItem="cKd-fm-BRP" secondAttribute="trailing" constant="4" id="W7v-uW-v0a"/>
+                    <constraint firstItem="xJq-9n-qGA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="d3C-xy-kGO"/>
+                    <constraint firstItem="X7E-pc-5pB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="nAl-42-G1O"/>
+                    <constraint firstItem="xJq-9n-qGA" firstAttribute="top" secondItem="cKd-fm-BRP" secondAttribute="bottom" constant="5" id="wzk-hY-rAh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="helpIcon" destination="X7E-pc-5pB" id="Lzn-jQ-Uuc"/>
+                <outlet property="lblMoney" destination="fuq-Ud-2TX" id="lTA-DI-7v7"/>
+                <outlet property="lblText" destination="cKd-fm-BRP" id="34u-SC-QAz"/>
+                <outlet property="lblTime" destination="xJq-9n-qGA" id="Gcl-pd-Qa1"/>
+            </connections>
+            <point key="canvasLocation" x="321" y="295.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="wallet_failure" width="14" height="14"/>
+    </resources>
+</document>

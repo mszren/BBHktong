@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GrabCunstomerHelpView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7d7-Tw-cDx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKe-ai-PqY">
+                    <rect key="frame" x="40" y="91" width="240" height="132"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="有效客户跟进步骤" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahR-21-cIz">
+                            <rect key="frame" x="60" y="16" width="120" height="18"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rob_step1" translatesAutoresizingMaskIntoConstraints="NO" id="uVr-eT-6DV">
+                            <rect key="frame" x="28" y="46" width="40" height="40"/>
+                            <animations/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rob_step2" translatesAutoresizingMaskIntoConstraints="NO" id="DvA-nG-iIF">
+                            <rect key="frame" x="100" y="46" width="40" height="40"/>
+                            <animations/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rob_step3" translatesAutoresizingMaskIntoConstraints="NO" id="60s-Kx-8Z9">
+                            <rect key="frame" x="172" y="46" width="40" height="40"/>
+                            <animations/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rob_step_next" translatesAutoresizingMaskIntoConstraints="NO" id="VZz-LU-vi5">
+                            <rect key="frame" x="74" y="46" width="20" height="40"/>
+                            <animations/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rob_step_next" translatesAutoresizingMaskIntoConstraints="NO" id="UPI-vA-A5y">
+                            <rect key="frame" x="146" y="46" width="20" height="40"/>
+                            <animations/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="判断有效性" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyW-md-6ge">
+                            <rect key="frame" x="18" y="92" width="60" height="15"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.52549019607843139" green="0.35294117647058826" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="客户跟进" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YZ-cK-OOM">
+                            <rect key="frame" x="96" y="92" width="48" height="15"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.52549019607843139" green="0.35294117647058826" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="客户成交" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1k7-7c-hNR">
+                            <rect key="frame" x="168" y="92" width="48" height="15"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.52549019607843139" green="0.35294117647058826" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="ZUF-wf-35v"/>
+                        <constraint firstAttribute="height" constant="132" id="arP-xu-8d5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7d7-Tw-cDx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KTm-IK-aNM"/>
+                <constraint firstAttribute="bottom" secondItem="7d7-Tw-cDx" secondAttribute="bottom" id="NNk-zT-viZ"/>
+                <constraint firstItem="7d7-Tw-cDx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fps-yL-yCn"/>
+                <constraint firstItem="IKe-ai-PqY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-83" id="q7M-ZR-9hB"/>
+                <constraint firstItem="IKe-ai-PqY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vZm-x3-Izc"/>
+                <constraint firstAttribute="trailing" secondItem="7d7-Tw-cDx" secondAttribute="trailing" id="vvf-Bb-pmq"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="7d7-Tw-cDx" id="Mm5-wt-HBC"/>
+                <outlet property="contentView" destination="IKe-ai-PqY" id="J6x-6Y-TV5"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rob_step1" width="40" height="40"/>
+        <image name="rob_step2" width="40" height="40"/>
+        <image name="rob_step3" width="40" height="40"/>
+        <image name="rob_step_next" width="20" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ResoldHouseResultHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M7-8W-IxN" customClass="XYPieChart">
+                    <rect key="frame" x="170" y="0.0" width="140" height="140"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="买方缴纳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIr-pC-Caa">
+                            <rect key="frame" x="30" y="30" width="80" height="80"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="MIr-pC-Caa" secondAttribute="bottom" constant="30" id="8yV-Eh-E10"/>
+                        <constraint firstAttribute="height" constant="140" id="Iiu-xE-W3m"/>
+                        <constraint firstAttribute="trailing" secondItem="MIr-pC-Caa" secondAttribute="trailing" constant="30" id="K5J-yD-03L"/>
+                        <constraint firstAttribute="width" constant="140" id="ZE8-ss-nSm"/>
+                        <constraint firstItem="MIr-pC-Caa" firstAttribute="leading" secondItem="5M7-8W-IxN" secondAttribute="leading" constant="30" id="gu8-lX-GpZ"/>
+                        <constraint firstItem="MIr-pC-Caa" firstAttribute="top" secondItem="5M7-8W-IxN" secondAttribute="top" constant="30" id="rgt-hP-GgV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tP6-Kj-LWI" customClass="XYPieChart">
+                    <rect key="frame" x="10" y="0.0" width="140" height="140"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卖方缴纳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piT-N0-Dqa">
+                            <rect key="frame" x="30" y="30" width="80" height="80"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="piT-N0-Dqa" secondAttribute="bottom" constant="30" id="3iH-fn-X2h"/>
+                        <constraint firstAttribute="trailing" secondItem="piT-N0-Dqa" secondAttribute="trailing" constant="30" id="A3T-Qo-NXV"/>
+                        <constraint firstAttribute="height" constant="140" id="O4R-QG-BCe"/>
+                        <constraint firstItem="piT-N0-Dqa" firstAttribute="top" secondItem="tP6-Kj-LWI" secondAttribute="top" constant="30" id="Uxh-AW-eAZ"/>
+                        <constraint firstAttribute="width" constant="140" id="Vn9-au-gJ3"/>
+                        <constraint firstItem="piT-N0-Dqa" firstAttribute="leading" secondItem="tP6-Kj-LWI" secondAttribute="leading" constant="30" id="Wxk-UE-eCJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tP6-Kj-LWI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="41W-XB-8u1"/>
+                <constraint firstItem="5M7-8W-IxN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="80" id="ESO-P8-UQJ"/>
+                <constraint firstItem="5M7-8W-IxN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QbJ-qO-p0E"/>
+                <constraint firstItem="tP6-Kj-LWI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-80" id="XZC-rl-FZY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buyerPieChart" destination="5M7-8W-IxN" id="UFE-Ju-T3a"/>
+                <outlet property="lblBuyer" destination="MIr-pC-Caa" id="P44-Jg-cu0"/>
+                <outlet property="lblSeller" destination="piT-N0-Dqa" id="oeu-1Y-C04"/>
+                <outlet property="sellerPieChart" destination="tP6-Kj-LWI" id="ogs-UA-LJ9"/>
+            </connections>
+            <point key="canvasLocation" x="-233" y="236"/>
+        </view>
+    </objects>
+</document>
